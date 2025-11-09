@@ -9,13 +9,14 @@ import { userTable } from "~/db/schema";
 // Fetch users and their uploads using relational queries
 export async function getUsersWithUploads(): Promise<UserWithUploads[]> {
   try {
-    const users: UserWithUploads[] = await db.query.userTable.findMany({
-      orderBy: [desc(userTable.createdAt)],
-      with: {
-        uploads: true,
-      },
-    });
-    return users;
+    // const users: UserWithUploads[] = await db.query.userTable.findMany({
+    //   orderBy: [desc(userTable.createdAt)],
+    //   with: {
+    //     uploads: true,
+    //   },
+    // });
+    // return users;
+    return [];
   } catch (error) {
     console.error("Failed to fetch users with uploads:", error);
     return [];
