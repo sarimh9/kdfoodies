@@ -1,9 +1,8 @@
 export const SEO_CONFIG = {
-  description:
-    "Relivator is a robust ecommerce template built with next.js and other modern technologies. It's designed for developers who want a fast, modern, and scalable foundation without reinventing the backend.",
+  description: "KD Foodies is a robust resturant, delivering happiness",
   fullName: "KD Foodies",
   name: "KD Foodies",
-  slogan: "Store which makes you happy.",
+  slogan: "Resturant which makes you happy.",
 };
 
 export const SYSTEM_CONFIG = {

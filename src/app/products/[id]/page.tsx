@@ -270,25 +270,31 @@ export default function ProductDetailPage() {
     setQuantity((prev) => (newQty >= 1 ? newQty : prev));
   }, []);
 
-  const handleAddToCart = React.useCallback(async () => {
-    if (!product) return;
+  // const handleAddToCart = React.useCallback(async () => {
+  //   console.log("inside add to cart")
+  //   console.log(product)
+  //   if (!product) return;
 
-    setIsAdding(true);
-    addItem(
-      {
-        category: product.category,
-        id: product.id,
-        image: product.image,
-        name: product.name,
-        price: product.price,
-      },
-      quantity,
-    );
-    setQuantity(1);
-    toast.success(`${product.name} added to cart`);
-    await new Promise((r) => setTimeout(r, 400)); // fake latency
-    setIsAdding(false);
-  }, [addItem, product, quantity]);
+  //   setIsAdding(true);
+  //   addItem(
+  //     {
+  //       category: product.category,
+  //       id: product.id,
+  //       image: product.image,
+  //       name: product.name,
+  //       price: product.price,
+  //     },
+  //     quantity,
+  //   );
+  //   setQuantity(1);
+  //   toast.success(`${product.name} added to cart`);
+  //   await new Promise((r) => setTimeout(r, 400)); // fake latency
+  //   setIsAdding(false);
+  // }, [addItem, product, quantity]);
+
+  const handleAddToCart = () => {
+    console.log("inside add to cart");
+  }
 
   /* -------------------------- Conditional UI ---------------------------- */
   if (!product) {

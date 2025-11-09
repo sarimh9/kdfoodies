@@ -43,6 +43,11 @@ export function ProductCard({
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
+    console.log("inside add to cart")
+    const cartData = typeof window !== 'undefined' ? localStorage.getItem('cart') : null;
+    const cart = cartData ? JSON.parse(cartData) : null;
+
+    console.log(cart)
     if (onAddToCart) {
       setIsAddingToCart(true);
       // Simulate API call
@@ -62,9 +67,7 @@ export function ProductCard({
   };
 
   const discount = product.originalPrice
-    ? Math.round(
-        ((product.originalPrice - product.price) / product.originalPrice) * 100
-      )
+    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : 0;
 
   const renderStars = () => {
@@ -81,8 +84,8 @@ export function ProductCard({
               i < fullStars
                 ? "fill-yellow-400 text-yellow-400"
                 : i === fullStars && hasHalfStar
-                ? "fill-yellow-400/50 text-yellow-400"
-                : "stroke-muted/40 text-muted"
+                  ? "fill-yellow-400/50 text-yellow-400"
+                  : "stroke-muted/40 text-muted"
             )}
             key={`star-${product.id}-position-${i + 1}`}
           />

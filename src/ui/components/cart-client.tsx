@@ -5,7 +5,7 @@ import { Minus, Plus, ShoppingCart, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
-
+import { useRouter } from 'next/navigation';
 import { cn } from "~/lib/cn";
 import { useMediaQuery } from "~/lib/hooks/use-media-query";
 import { Badge } from "~/ui/primitives/badge";
@@ -37,12 +37,13 @@ export interface CartItem {
 
 interface CartProps {
   className?: string;
-  mockCart: CartItem[];
+  cartData: CartItem[];
 }
 
-export function CartClient({ className, mockCart }: CartProps) {
+export function CartClient({ className, cartData }: CartProps) {
+  const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(false);
-  const [cartItems, setCartItems] = React.useState<CartItem[]>(mockCart);
+  const [cartItems, setCartItems] = React.useState<CartItem[]>(cartData);
   const [isMounted, setIsMounted] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -51,6 +52,7 @@ export function CartClient({ className, mockCart }: CartProps) {
   }, []);
 
   const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  console.log(cartData)
   const subtotal = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0,
@@ -72,6 +74,10 @@ export function CartClient({ className, mockCart }: CartProps) {
   const handleClearCart = () => {
     setCartItems([]);
   };
+
+  const handleCheckout = () => {
+    router.push('/auth/sign-up');
+  }
 
   const CartTrigger = (
     <Button
@@ -276,7 +282,7 @@ export function CartClient({ className, mockCart }: CartProps) {
                   ${subtotal.toFixed(2)}
                 </span>
               </div>
-              <Button className="w-full" size="lg">
+              <Button className="w-full" size="lg" onClick={handleCheckout}>
                 Checkout
               </Button>
               <div className="flex items-center justify-between">

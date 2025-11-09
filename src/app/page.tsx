@@ -44,6 +44,7 @@ const featuresWhyChooseUs = [
 ];
 
 export default function HomePage() {
+  const imageProperties = "w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
   return (
     <>
       <main
@@ -173,7 +174,7 @@ export default function HomePage() {
                   fill
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  src="https://images.unsplash.com/photo-1624767735494-1929dc24ad43?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+                  src={`https://images.unsplash.com/photo-1414235077428-338989a2e8c0?${imageProperties}`}
                 />
               </div>
             </div>
