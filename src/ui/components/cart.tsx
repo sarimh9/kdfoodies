@@ -17,7 +17,7 @@ interface CartProps {
 
 // const mockCart: CartItem[] = [
 //   {
-//     category: "Audio",
+//     category: "Food",
 //     id: "1",
 //     image:
 //       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",

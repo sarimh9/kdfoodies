@@ -53,7 +53,7 @@ const range = (length: number) => Array.from({ length }, (_, i) => i);
 
 const products: Product[] = [
   {
-    category: "Audio",
+    category: "Food",
     description:
       "Experience crystal-clear sound with our premium wireless headphones. Featuring active noise cancellation, 30-hour battery life, and comfortable over-ear design for all-day listening comfort.",
     features: [
@@ -66,9 +66,9 @@ const products: Product[] = [
     ],
     id: "1",
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Premium Wireless Headphones",
+    name: "Premium Food",
     originalPrice: 249.99,
     price: 199.99,
     rating: 4.5,
@@ -82,7 +82,7 @@ const products: Product[] = [
     },
   },
   {
-    category: "Wearables",
+    category: "Food",
     description:
       "Stay connected and track your fitness goals with our advanced smartwatch. Features health monitoring, GPS tracking, and a beautiful always-on display.",
     features: [
@@ -95,9 +95,9 @@ const products: Product[] = [
     ],
     id: "2",
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Smart Watch Series 5",
+    name: "Smart Food Series 5",
     originalPrice: 349.99,
     price: 299.99,
     rating: 4.2,
@@ -125,7 +125,7 @@ const products: Product[] = [
     ],
     id: "3",
     image:
-      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
     name: "Professional Camera Kit",
     originalPrice: 1499.99,
@@ -155,9 +155,9 @@ const products: Product[] = [
     ],
     id: "4",
     image:
-      "https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Ergonomic Office Chair",
+    name: "Food",
     originalPrice: 299.99,
     price: 249.99,
     rating: 4.6,
@@ -185,9 +185,9 @@ const products: Product[] = [
     ],
     id: "5",
     image:
-      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Smartphone Pro Max",
+    name: "Smart Food",
     originalPrice: 1099.99,
     price: 999.99,
     rating: 4.9,
@@ -217,14 +217,14 @@ const products: Product[] = [
     ],
     id: "6",
     image:
-      "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: 'Ultra HD Smart TV 55"',
+    name: 'HD Khana',
     originalPrice: 899.99,
     price: 799.99,
     rating: 4.7,
     specs: {
-      audio: "40W Dolby Atmos",
+      Food: "40W Dolby Atmos",
       brand: "VisionPro",
       connectivity: "HDMI x4, USB x3, Wi-Fi, Bluetooth",
       display: '55" 4K Ultra HD LED',

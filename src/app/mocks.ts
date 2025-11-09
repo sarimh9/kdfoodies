@@ -1,44 +1,46 @@
+const imageProperties = "w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3";
+
 export const featuredProductsHomepage = [
   {
-    category: "Audio",
+    category: "Food",
     id: "1",
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Premium Wireless Headphones",
+    name: "Premium Food",
     originalPrice: 249.99,
     price: 199.99,
     rating: 4.5,
   },
   {
-    category: "Wearables",
+    category: "Food",
     id: "2",
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Smart Watch Series 5",
+    name: "Smart Food Series 5",
     originalPrice: 349.99,
     price: 299.99,
     rating: 4.2,
   },
   {
-    category: "Smartphones",
+    category: "Food",
     id: "5",
     image:
-      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Smartphone Pro Max",
+    name: "Smart Food",
     originalPrice: 1099.99,
     price: 999.99,
     rating: 4.8,
   },
   {
-    category: "Audio",
+    category: "Food",
     id: "6",
     image:
-      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
     inStock: true,
-    name: "Bluetooth Earbuds Pro",
+    name: "Khana",
     originalPrice: 179.99,
     price: 149.99,
     rating: 4.4,
@@ -49,26 +51,26 @@ export const featuredProductsHomepage = [
 export const categories = [
   {
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    name: "Audio",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    name: "Food",
     productCount: 12,
   },
   {
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    name: "Wearables",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    name: "Food1",
     productCount: 8,
   },
   {
     image:
-      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    name: "Smartphones",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    name: "Food2",
     productCount: 15,
   },
   {
     image:
-      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    name: "Laptops",
+      "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    name: "Food3",
     productCount: 10,
   },
 ];
